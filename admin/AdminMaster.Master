@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="_025_Kutuphane.admin.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+        <header>
+            <div class="logo">LOGO</div>
+            <nav>
+                <ul>
+                    <li><a href="Anasayfa.aspx">ANASAYFA</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="banner">
+            Bilgi Güçtür
+        </div>
+        <div class="sol-taraf">
+            <p><a href="Duyuru.aspx">DUYURU EKLE</a></p>
+            <p><a href="Kitap.aspx">KITAP EKLE</a></p>
+            <p><a href="Kitaplar.aspx">KITAP GUNCELLE</a></p>
+            <p><a href="Yazar.aspx">YAZAR EKLE</a></p>
+            <p><a href="YazarGuncelle.aspx">YAZAR GUNCELLE</a></p>
+        </div>
+        <div class="icerik">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            FOOTER
+        </footer>
+    </div>
+    </form>
+</body>
+</html>
